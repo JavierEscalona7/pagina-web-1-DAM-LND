@@ -1,0 +1,165 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      overflow-y: scroll;
+    }
+
+    body {
+      background: #0a0a0a;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr;
+      grid-template-areas: "header" "nav" "body";
+      min-height: 100vh;
+    }
+
+    .body-area {
+      grid-area: body;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "aside" "main";
+    }
+
+    @media (min-width: 768px) {
+      .body-area {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas: "aside main";
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      aside {
+        padding: 12px;
+      }
+
+      .acceso {
+        padding: 8px;
+      }
+
+
+      nav a {
+        font-size: 14px;
+        padding: 6px 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      main {
+        min-height: auto;
+      }
+    }
+
+    header {
+      grid-area: header;
+      background-image: url(../imagenes/banner1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: clamp(120px, 25vw, 220px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .wow-title {
+      font-family: "Georgia", serif;
+      font-size: clamp(24px, 6vw, 60px);
+      color: #f8d44c;
+      text-shadow: 3px 3px 0px #000, 6px 6px 0px #3b2f00, 0 0 15px #ffea7a;
+      letter-spacing: clamp(1px, 0.5vw, 4px);
+      text-align: center;
+      line-height: 1.2;
+      display: flex;
+    }
+
+    nav {
+      grid-area: nav;
+      background: #000;
+      border-bottom: 3px solid #d4a017;
+      padding: 12px 16px;
+      box-shadow: 0 0 15px #000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    nav a {
+      font-family: "Georgia", serif;
+      font-size: clamp(14px, 2.5vw, 22px);
+      color: #f5d76e;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #000, 0 0 10px #1e90ff;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 2px 2px 0 #000, 0 0 15px #4aa3ff, 0 0 30px #4aa3ff;
+    }
+
+    aside {
+      grid-area: aside;
+      background: #0d0d0d;
+      border-right: 2px solid #d4a017;
+      padding: 24px 16px;
+    }
+
+    aside h2 {
+      font-family: "Georgia", serif;
+      font-size: 16px;
+      color: #f8d44c;
+      text-shadow: 0 0 8px #ffea7a;
+      margin-bottom: 16px;
+      text-align: center;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .acceso {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      border: 1px solid #2a2000;
+      border-radius: 6px;
+      background: #110e00;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .acceso:hover {
+      border-color: #d4a017;
+      background: #1a1400;
+    }
+
+
+    .acceso .info .nombre {
+      font-family: "Georgia", serif;
+      font-size: 14px;
+      color: #f5d76e;
+      font-weight: bold;
+    }
+
+    .acceso .info .desc {
+      font-family: "Georgia", serif;
+      font-size: 11px;
+      color: #888;
+      margin-top: 2px;
+    }

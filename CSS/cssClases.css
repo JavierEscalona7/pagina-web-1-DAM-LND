@@ -1,0 +1,444 @@
+
+.main-clases {
+  grid-area: main;
+  padding: 32px 24px;
+}
+
+.main-clases h2 {
+  font-family: "Georgia", serif;
+  font-size: 22px;
+  color: #f8d44c;
+  text-shadow: 0 0 10px #ffea7a;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+.grid-clases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  transition: background 0.3s ease;
+}
+
+.texto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+}
+
+.nombre-clase {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f8d44c;
+  text-shadow: 1px 1px 4px #000;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.desc-clase {
+  font-family: "Georgia", serif;
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.4;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.caja-clase-guerrero {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/guerrero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-guerrero:hover {
+  border-color: #c0392b;
+}
+
+.caja-clase-guerrero:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-guerrero:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-paladin {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/paladin.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-paladin:hover {
+  border-color: #f4a460;
+}
+
+.caja-clase-paladin:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-paladin:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-cazador {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/cazador.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-cazador:hover {
+  border-color: #4caf50;
+}
+
+.caja-clase-cazador:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-cazador:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-mago {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/mago.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-mago:hover {
+  border-color: #64b5f6;
+}
+
+.caja-clase-mago:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-mago:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-brujo {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/brujo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-brujo:hover {
+  border-color: #9c27b0;
+}
+
+.caja-clase-brujo:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-brujo:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-druida {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/druida.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-druida:hover {
+  border-color: #8bc34a;
+}
+
+.caja-clase-druida:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-druida:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-sacerdote {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/sacerdote.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-sacerdote:hover {
+  border-color: #f5f5f5;
+}
+
+.caja-clase-sacerdote:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-sacerdote:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-picaro {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/picaro.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-picaro:hover {
+  border-color: #ffd600;
+}
+
+.caja-clase-picaro:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-picaro:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-shaman {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/chaman.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-shaman:hover {
+  border-color: #1565c0;
+}
+
+.caja-clase-shaman:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-shaman:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-caballero {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/caballero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-caballero:hover {
+  border-color: #4fc3f7;
+}
+
+.caja-clase-caballero:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-caballero:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-monje {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/monje.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-monje:hover {
+  border-color: #ff8f00;
+}
+
+.caja-clase-monje:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-monje:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-cazademon {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/cazadem.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-cazademon:hover {
+  border-color: #00e5ff;
+}
+
+.caja-clase-cazademon:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-cazademon:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+.caja-clase-evocador {
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-image: url(../imagenes/evocador.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-clase-evocador:hover {
+  border-color: #69f0ae;
+}
+
+.caja-clase-evocador:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caja-clase-evocador:hover .desc-clase {
+  max-height: 80px;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+
+  .grid-clases {
+    gap: 14px;
+  }
+
+  .grid-clases > div {
+    width: 150px;
+    height: 200px;
+  }
+
+  .nombre-clase {
+    font-size: 14px;
+  }
+
+  .desc-clase {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .grid-clases {
+    justify-content: center;
+  }
+
+  .grid-clases > div {
+    width: 180px;
+    height: 230px;
+  }
+}

@@ -1,0 +1,418 @@
+.main-razas {
+  grid-area: main;
+  padding: 32px 24px;
+}
+
+.main-razas h2 {
+  font-family: "Georgia", serif;
+  font-size: 22px;
+  color: #f8d44c;
+  text-shadow: 0 0 10px #ffea7a;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.grid-razas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.raza-imagen {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.raza-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.raza-nombre {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f8d44c;
+  text-shadow: 1px 1px 4px #000;
+  letter-spacing: 1px;
+}
+
+.raza-desc {
+  font-family: "Georgia", serif;
+  font-size: 11px;
+  color: #aaa;
+  line-height: 1.5;
+  max-width: 160px;
+}
+
+.caja-raza-humano {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-humano .raza-imagen {
+  background-image: url(../imagenes/humano.png);
+}
+
+.caja-raza-humano:hover {
+  border-color: #f5c842;
+}
+
+.caja-raza-elfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-elfo .raza-imagen {
+  background-image: url(../imagenes/ElfoNoche.png);
+}
+
+.caja-raza-elfo:hover {
+  border-color: #9c27b0;
+}
+
+.caja-raza-enano {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-enano .raza-imagen {
+  background-image: url(../imagenes/enano.png);
+}
+
+.caja-raza-enano:hover {
+  border-color: #cd7f32;
+}
+
+.caja-raza-gnomo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-gnomo .raza-imagen {
+  background-image: url(../imagenes/gnomo.png);
+}
+
+.caja-raza-gnomo:hover {
+  border-color: #f06292;
+}
+
+.caja-raza-draenei {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-draenei .raza-imagen {
+  background-image: url(../imagenes/draenei.png);
+}
+
+.caja-raza-draenei:hover {
+  border-color: #64b5f6;
+}
+
+.caja-raza-worgen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-worgen .raza-imagen {
+  background-image: url(../imagenes/huargen.png);
+}
+
+.caja-raza-worgen:hover {
+  border-color: #78909c;
+}
+
+.caja-raza-orco {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-orco .raza-imagen {
+  background-image: url(../imagenes/orco.png);
+}
+
+.caja-raza-orco:hover {
+  border-color: #4caf50;
+}
+
+.caja-raza-troll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-troll .raza-imagen {
+  background-image: url(../imagenes/troll.png);
+}
+
+.caja-raza-troll:hover {
+  border-color: #26c6da;
+}
+
+.caja-raza-tauren {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-tauren .raza-imagen {
+  background-image: url(../imagenes/tauren.png);
+}
+
+.caja-raza-tauren:hover {
+  border-color: #8d6e63;
+}
+
+.caja-raza-muerto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-muerto .raza-imagen {
+  background-image: url(../imagenes/noMuerto.png);
+}
+
+.caja-raza-muerto:hover {
+  border-color: #9e9e9e;
+}
+
+.caja-raza-sangre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-sangre .raza-imagen {
+  background-image: url(../imagenes/elfoSangre.png);
+}
+
+.caja-raza-sangre:hover {
+  border-color: #ef5350;
+}
+
+.caja-raza-goblin {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-goblin .raza-imagen {
+  background-image: url(../imagenes/goblin.png);
+}
+
+.caja-raza-goblin:hover {
+  border-color: #66bb6a;
+}
+
+.caja-raza-pandaren {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-pandaren .raza-imagen {
+  background-image: url(../imagenes/pandaren.png);
+}
+
+.caja-raza-pandaren:hover {
+  border-color: #ffb74d;
+}
+
+.caja-raza-dracthyr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #2a2000;
+  background: #110e00;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caja-raza-dracthyr .raza-imagen {
+  background-image: url(../imagenes/dracthyr1.png);
+}
+
+.caja-raza-dracthyr:hover {
+  border-color: #69f0ae;
+}
+
+@media (max-width: 480px) {
+
+  .grid-razas {
+    gap: 12px;
+  }
+
+  .grid-razas > div {
+    width: 240px;
+    padding: 8px;
+  }
+
+  .raza-imagen {
+    width: 70px;
+    height: 70px;
+  }
+
+  .raza-nombre {
+    font-size: 14px;
+  }
+
+  .raza-desc {
+    font-size: 11px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .grid-razas {
+    justify-content: center;
+  }
+
+  .grid-razas > div {
+    width: 260px;
+  }
+
+  .raza-imagen {
+    width: 80px;
+    height: 80px;
+  }
+}

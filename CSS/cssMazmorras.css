@@ -1,0 +1,150 @@
+.main-mazmorras {
+  grid-area: main;
+  padding: 32px 24px;
+}
+
+.main-mazmorras h2 {
+  font-family: "Georgia", serif;
+  font-size: 22px;
+  color: #f8d44c;
+  text-shadow: 0 0 10px #ffea7a;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.linea-tiempo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.linea-central {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #d4a017;
+  transform: translateX(-50%);
+}
+
+.punto {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d4a017;
+  border: 2px solid #ffea7a;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.entrada-izquierda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: calc(50% + 20px);
+}
+
+.entrada-derecha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: calc(50% + 20px);
+}
+
+
+.maz-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  background: #110e00;
+  border: 2px solid #2a2000;
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.maz-contenido:hover {
+  border-color: #d4a017;
+}
+
+
+.maz-imagen {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.maz-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 200px;
+}
+
+.maz-texto.derecha {
+  text-align: right;
+}
+
+.maz-anio {
+  font-family: "Georgia", serif;
+  font-size: 11px;
+  color: #d4a017;
+  letter-spacing: 1px;
+}
+
+.maz-nombre {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f8d44c;
+  text-shadow: 1px 1px 4px #000;
+  letter-spacing: 1px;
+}
+
+.maz-desc {
+  font-family: "Georgia", serif;
+  font-size: 11px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+  .linea-central {
+    display: none;
+  }
+  .punto {
+    display: none;
+  }
+  .entrada-izquierda,
+  .entrada-derecha {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .maz-contenido {
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+  }
+  .maz-imagen {
+    width: 100%;
+    height: auto;
+  }
+  .maz-texto,
+  .maz-texto.derecha {
+    max-width: 100%;
+    text-align: center;
+  }
+}
