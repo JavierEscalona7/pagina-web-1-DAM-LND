@@ -1,9 +1,8 @@
-
 main {
   max-width: 900px;
   width: 100%;
-  margin: 0 auto; 
-  text-align: center;     
+  margin: 0 auto;
+  text-align: center;
   padding: 20px;
   color: #f5d76e;
   font-family: "Georgia", serif;
@@ -36,4 +35,27 @@ main p {
   main p {
     font-size: 16px;
   }
+}
+
+.reloj-contenedor {
+  display: inline-block;
+  margin: 24px auto;
+  padding: 12px 24px;
+  border: 2px solid #d4a017;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.reloj-titulo {
+  font-size: 13px;
+  color: #aaa;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+#reloj {
+  font-size: 36px;
+  color: #f8d44c;
+  text-shadow: 0 0 10px #b8940a;
+  letter-spacing: 4px;
 }

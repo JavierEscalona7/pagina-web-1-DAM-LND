@@ -69,7 +69,7 @@
 }
 
 .caja-raza-humano .raza-imagen {
-  background-image: url(../imagenes/humano.png);
+  background-image: url(../imagenes/HumanFemale.jpg);
 }
 
 .caja-raza-humano:hover {
@@ -92,7 +92,7 @@
 }
 
 .caja-raza-elfo .raza-imagen {
-  background-image: url(../imagenes/ElfoNoche.png);
+  background-image: url(../imagenes/NightElfFemale.jpg);
 }
 
 .caja-raza-elfo:hover {
@@ -115,7 +115,7 @@
 }
 
 .caja-raza-enano .raza-imagen {
-  background-image: url(../imagenes/enano.png);
+  background-image: url(../imagenes/DwarfFemale.jpg);
 }
 
 .caja-raza-enano:hover {
@@ -138,7 +138,7 @@
 }
 
 .caja-raza-gnomo .raza-imagen {
-  background-image: url(../imagenes/gnomo.png);
+  background-image: url(../imagenes/GnomeFemale.jpg);
 }
 
 .caja-raza-gnomo:hover {
@@ -161,7 +161,7 @@
 }
 
 .caja-raza-draenei .raza-imagen {
-  background-image: url(../imagenes/draenei.png);
+  background-image: url(../imagenes/DraeneiFemale.jpg);
 }
 
 .caja-raza-draenei:hover {
@@ -184,7 +184,7 @@
 }
 
 .caja-raza-worgen .raza-imagen {
-  background-image: url(../imagenes/huargen.png);
+  background-image: url(../imagenes/WorgenFemale.jpg);
 }
 
 .caja-raza-worgen:hover {
@@ -207,7 +207,7 @@
 }
 
 .caja-raza-orco .raza-imagen {
-  background-image: url(../imagenes/orco.png);
+  background-image: url(../imagenes/OrcFemale.jpg);
 }
 
 .caja-raza-orco:hover {
@@ -230,7 +230,7 @@
 }
 
 .caja-raza-troll .raza-imagen {
-  background-image: url(../imagenes/troll.png);
+  background-image: url(../imagenes/TrollFemale.jpg);
 }
 
 .caja-raza-troll:hover {
@@ -253,7 +253,7 @@
 }
 
 .caja-raza-tauren .raza-imagen {
-  background-image: url(../imagenes/tauren.png);
+  background-image: url(../imagenes/TaurenFemale.jpg);
 }
 
 .caja-raza-tauren:hover {
@@ -276,7 +276,7 @@
 }
 
 .caja-raza-muerto .raza-imagen {
-  background-image: url(../imagenes/noMuerto.png);
+  background-image: url(../imagenes/UndeadFemale.jpg);
 }
 
 .caja-raza-muerto:hover {
@@ -299,7 +299,7 @@
 }
 
 .caja-raza-sangre .raza-imagen {
-  background-image: url(../imagenes/elfoSangre.png);
+  background-image: url(../imagenes/BloodElfFemale.jpg);
 }
 
 .caja-raza-sangre:hover {
@@ -322,7 +322,7 @@
 }
 
 .caja-raza-goblin .raza-imagen {
-  background-image: url(../imagenes/goblin.png);
+  background-image: url(../imagenes/GoblinFemale.jpg);
 }
 
 .caja-raza-goblin:hover {
@@ -345,7 +345,7 @@
 }
 
 .caja-raza-pandaren .raza-imagen {
-  background-image: url(../imagenes/pandaren.png);
+  background-image: url(../imagenes/PandarenFemale.jpg);
 }
 
 .caja-raza-pandaren:hover {
@@ -368,11 +368,43 @@
 }
 
 .caja-raza-dracthyr .raza-imagen {
-  background-image: url(../imagenes/dracthyr1.png);
+  background-image: url(../imagenes/Dracthyr.jpg);
 }
 
 .caja-raza-dracthyr:hover {
   border-color: #69f0ae;
+}
+
+.raza-genero {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn-genero {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  background: none;
+  border: 2px solid #333;
+  border-radius: 3px;
+  color: #555;
+  cursor: pointer;
+  padding: 2px 6px;
+  transition: color 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.btn-genero:hover {
+  color: #999;
+  border-color: #666;
+}
+
+.btn-genero.activo {
+  color: #f8d44c;
+  border-color: #b8940a;
+  text-shadow:
+    1px 1px 0px #3a2800,
+    -1px -1px 0px #3a2800;
 }
 
 @media (max-width: 480px) {
@@ -381,7 +413,7 @@
     gap: 12px;
   }
 
-  .grid-razas > div {
+  .grid-razas>div {
     width: 240px;
     padding: 8px;
   }
@@ -407,7 +439,7 @@
     justify-content: center;
   }
 
-  .grid-razas > div {
+  .grid-razas>div {
     width: 260px;
   }
 
