@@ -1,73 +1,23 @@
-let contenedorMinas = document.getElementById("Minas");
-let imagenesMinas = contenedorMinas.getElementsByTagName('img');
-let indiceMinas = 0;
+let ids = ["Minas", "Pinaculo", "HoraCrepusculo", "Corte"];
 
-for (let i = 0; i < imagenesMinas.length; i++) {
-  imagenesMinas[i].style.display = 'none';
+for (let i = 0; i < ids.length; i++) {
+  let contenedor = document.getElementById(ids[i]);
+  let imagenes = contenedor.getElementsByTagName("img");
+  let indice = 0;
+
+  for (let j = 0; j < imagenes.length; j++) {
+    imagenes[j].style.display = "none";
+  }
+  imagenes[0].style.display = "";
+
+  setTimeout(function cambiar() {
+    imagenes[indice].style.display = "none";
+    indice++;
+    if (indice >= imagenes.length) indice = 0;
+    imagenes[indice].style.display = "";
+    setTimeout(cambiar, 3000);
+  }, 3000);
 }
-imagenesMinas[indiceMinas].style.display = '';
-
-setTimeout(function pasarMinas() {
-  imagenesMinas[indiceMinas].style.display = 'none';
-  indiceMinas++;
-  if (indiceMinas >= imagenesMinas.length) { indiceMinas = 0; }
-  imagenesMinas[indiceMinas].style.display = '';
-  setTimeout(pasarMinas, 3000);
-}, 3000);
-
-
-let contenedorPinaculo = document.getElementById("Pinaculo");
-let imagenesPinaculo = contenedorPinaculo.getElementsByTagName('img');
-let indicePinaculo = 0;
-
-for (let i = 0; i < imagenesPinaculo.length; i++) {
-  imagenesPinaculo[i].style.display = 'none';
-}
-imagenesPinaculo[indicePinaculo].style.display = '';
-
-setTimeout(function pasarPinaculo() {
-  imagenesPinaculo[indicePinaculo].style.display = 'none';
-  indicePinaculo++;
-  if (indicePinaculo >= imagenesPinaculo.length) { indicePinaculo = 0; }
-  imagenesPinaculo[indicePinaculo].style.display = '';
-  setTimeout(pasarPinaculo, 3000);
-}, 3000);
-
-
-let contenedorHora = document.getElementById("HoraCrepusculo");
-let imagenesHora = contenedorHora.getElementsByTagName('img');
-let indiceHora = 0;
-
-for (let i = 0; i < imagenesHora.length; i++) {
-  imagenesHora[i].style.display = 'none';
-}
-imagenesHora[indiceHora].style.display = '';
-
-setTimeout(function pasarHora() {
-  imagenesHora[indiceHora].style.display = 'none';
-  indiceHora++;
-  if (indiceHora >= imagenesHora.length) { indiceHora = 0; }
-  imagenesHora[indiceHora].style.display = '';
-  setTimeout(pasarHora, 3000);
-}, 3000);
-
-
-let contenedorCorte = document.getElementById("Corte");
-let imagenesCorte = contenedorCorte.getElementsByTagName('img');
-let indiceCorte = 0;
-
-for (let i = 0; i < imagenesCorte.length; i++) {
-  imagenesCorte[i].style.display = 'none';
-}
-imagenesCorte[indiceCorte].style.display = '';
-
-setTimeout(function pasarCorte() {
-  imagenesCorte[indiceCorte].style.display = 'none';
-  indiceCorte++;
-  if (indiceCorte >= imagenesCorte.length) { indiceCorte = 0; }
-  imagenesCorte[indiceCorte].style.display = '';
-  setTimeout(pasarCorte, 3000);
-}, 3000);
 
 
 let idioma = "es"; // idioma actual
