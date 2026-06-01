@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WoW - Mazmorras</title>
   <link rel="stylesheet" href="../CSS/cssPrincipal.css">
   <link rel="stylesheet" href="../CSS/cssMazmorras.css">
+  <script src="../javascript/mazmorras.js" defer></script>
 </head>
+
 <body>
   <div class="contenedor">
 
@@ -45,51 +48,82 @@
       </aside>
 
       <main class="main-mazmorras">
+        <div class="idioma-contenedor">
+          <button id="btnIdioma">English</button>
+        </div>
+
         <h2>Mazmorras Icónicas</h2>
 
         <div class="linea-tiempo">
           <div class="linea-central"></div>
+
           <div class="entrada-izquierda">
             <div class="maz-contenido">
               <img src="../imagenes/minasDeLaMuerte.png" alt="Minas de la Muerte" class="maz-imagen">
               <div class="maz-texto">
                 <div class="maz-anio">2004 — Classic</div>
                 <div class="maz-nombre">Minas de la Muerte</div>
-                <div class="maz-desc">La primera gran mazmorra de la Alianza. Un oscuro complejo minero infestado de defias y pistoleros donde los aventureros se enfrentan a Van Cleef.</div>
+                <div class="maz-desc">La primera gran mazmorra de la Alianza. Un oscuro complejo minero infestado de
+                  defias y pistoleros donde los aventureros se enfrentan a Van Cleef.</div>
               </div>
             </div>
             <div class="punto"></div>
+            <div class="maz" id="Minas">
+              <img src="../imagenes/minas1.jpeg" class="maz-imagen">
+              <img src="../imagenes/minas2.jpg" class="maz-imagen">
+              <img src="../imagenes/minas3.jpg" class="maz-imagen">
+            </div>
           </div>
+
           <div class="entrada-derecha">
+            <div class="maz" id="Pinaculo">
+              <img src="../imagenes/pinaculo1.jpg" class="maz-imagen">
+              <img src="../imagenes/pinaculo2.jpg" class="maz-imagen">
+              <img src="../imagenes/pinaculo3.jpg" class="maz-imagen">
+            </div>
             <div class="punto"></div>
             <div class="maz-contenido">
               <div class="maz-texto derecha">
                 <div class="maz-anio">2008 — Wrath of the Lich King</div>
                 <div class="maz-nombre">Pináculo de Utgarde</div>
-                <div class="maz-desc">La fortaleza de los vrykul en las costas de Rasganorte. Una mazmorra épica con vistas al mar helado y uno de los diseños más recordados de la expansión.</div>
+                <div class="maz-desc">La fortaleza de los vrykul en las costas de Rasganorte. Una mazmorra épica con
+                  vistas al mar helado y uno de los diseños más recordados de la expansión.</div>
               </div>
               <img src="../imagenes/pinaculo.png" alt="Pináculo de Utgarde" class="maz-imagen">
             </div>
           </div>
+
           <div class="entrada-izquierda">
             <div class="maz-contenido">
               <img src="../imagenes/horaCrepusculo.png" alt="Hora del Crepúsculo" class="maz-imagen">
               <div class="maz-texto">
                 <div class="maz-anio">2010 — Cataclysm</div>
                 <div class="maz-nombre">Hora del Crepúsculo</div>
-                <div class="maz-desc">Un viaje por el tiempo a un futuro apocalíptico donde Deathwing ha destruido Azeroth. Densa en historia y con una atmósfera oscura e inquietante.</div>
+                <div class="maz-desc">Un viaje por el tiempo a un futuro apocalíptico donde Deathwing ha destruido
+                  Azeroth. Densa en historia y con una atmósfera oscura e inquietante.</div>
               </div>
             </div>
             <div class="punto"></div>
+            <div class="maz" id="HoraCrepusculo">
+              <img src="../imagenes/hora1jpg.jpg" class="maz-imagen">
+              <img src="../imagenes/hora2.jpg" class="maz-imagen">
+              <img src="../imagenes/hora3.jpg" class="maz-imagen">
+            </div>
           </div>
 
           <div class="entrada-derecha">
+            <div class="maz" id="Corte">
+              <img src="../imagenes/corte1.jpg" class="maz-imagen">
+              <img src="../imagenes/corte2.jpg" class="maz-imagen">
+              <img src="../imagenes/corte3.jpg" class="maz-imagen">
+            </div>
             <div class="punto"></div>
             <div class="maz-contenido">
               <div class="maz-texto derecha">
                 <div class="maz-anio">2012 — Mists of Pandaria</div>
                 <div class="maz-nombre">Corte de las Estrellas</div>
-                <div class="maz-desc">La guarida del Príncipe Oscuro Kael'thas en un palacio etéreo entre estrellas. Visualmente impresionante y uno de los finales de mazmorra más épicos del juego.</div>
+                <div class="maz-desc">La guarida del Príncipe Oscuro Kael'thas en un palacio etéreo entre estrellas.
+                  Visualmente impresionante y uno de los finales de mazmorra más épicos del juego.</div>
               </div>
               <img src="../imagenes/corte.png" alt="Corte de las Estrellas" class="maz-imagen">
             </div>
@@ -101,4 +135,5 @@
     </div>
   </div>
 </body>
+
 </html>
